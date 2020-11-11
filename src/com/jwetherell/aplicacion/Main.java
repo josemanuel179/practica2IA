@@ -15,7 +15,7 @@ import com.jwetherell.algorithms.data_structures.Graph.Vertex;
 
 public class Main {
   public static class Grafo {
-    final List<Vertex<Integer>> verticies = new ArrayList<Vertex<Integer>>();
+    final List<Vertex<Integer>> vertices = new ArrayList<Vertex<Integer>>();
     final Graph.Vertex<Integer> n1 = new Graph.Vertex<Integer>(1);
     final Graph.Vertex<Integer> n2 = new Graph.Vertex<Integer>(2);
     final Graph.Vertex<Integer> n3 = new Graph.Vertex<Integer>(3);
@@ -27,19 +27,19 @@ public class Main {
     final Graph.Vertex<Integer> n9 = new Graph.Vertex<Integer>(9);
     final Graph.Vertex<Integer> n10 = new Graph.Vertex<Integer>(10);
     {
-      verticies.add(n1);
-      verticies.add(n2);
-      verticies.add(n3);
-      verticies.add(n4);
-      verticies.add(n5);
-      verticies.add(n6);
-      verticies.add(n7);
-      verticies.add(n8);
-      verticies.add(n9);
-      verticies.add(n10);
+      vertices.add(n1);
+      vertices.add(n2);
+      vertices.add(n3);
+      vertices.add(n4);
+      vertices.add(n5);
+      vertices.add(n6);
+      vertices.add(n7);
+      vertices.add(n8);
+      vertices.add(n9);
+      vertices.add(n10);
     }
 
-    final List<Edge<Integer>> edges = new ArrayList<Edge<Integer>>();
+    final List<Edge<Integer>> aristas = new ArrayList<Edge<Integer>>();
     final Graph.Edge<Integer> e1_2 = new Graph.Edge<Integer>(6, n1, n2);
     final Graph.Edge<Integer> e1_3 = new Graph.Edge<Integer>(10, n1, n3);
     final Graph.Edge<Integer> e1_4 = new Graph.Edge<Integer>(7, n1, n4);
@@ -55,23 +55,23 @@ public class Main {
     final Graph.Edge<Integer> e9_10 = new Graph.Edge<Integer>(2, n9, n10);
     final Graph.Edge<Integer> e10_9 = new Graph.Edge<Integer>(2, n10, n9);
     {
-      edges.add(e1_2);
-      edges.add(e1_3);
-      edges.add(e1_4);
-      edges.add(e2_5);
-      edges.add(e3_4);
-      edges.add(e3_5);
-      edges.add(e3_6);
-      edges.add(e4_3);
-      edges.add(e4_7);
-      edges.add(e5_8);
-      edges.add(e6_9);
-      edges.add(e7_10);
-      edges.add(e9_10);
-      edges.add(e10_9);
+      aristas.add(e1_2);
+      aristas.add(e1_3);
+      aristas.add(e1_4);
+      aristas.add(e2_5);
+      aristas.add(e3_4);
+      aristas.add(e3_5);
+      aristas.add(e3_6);
+      aristas.add(e4_3);
+      aristas.add(e4_7);
+      aristas.add(e5_8);
+      aristas.add(e6_9);
+      aristas.add(e7_10);
+      aristas.add(e9_10);
+      aristas.add(e10_9);
     }
 
-    final Graph<Integer> graph = new Graph<Integer>(verticies, edges);
+    final Graph<Integer> graph = new Graph<Integer>(vertices, aristas);
   }
 
   public static void main(String[] args) {
@@ -81,7 +81,7 @@ public class Main {
     {
   	  final AStar<Integer> aStar = new AStar<Integer>();
       final List<Graph.Edge<Integer>> path = aStar.aStar(grafo.graph, start, end);
-      System.out.println("A* path error. path="+path);
+      System.out.println("A* path="+path);
   	}
   }
 }
