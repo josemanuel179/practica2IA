@@ -1,4 +1,4 @@
-# Practica 2
+# Práctica 2
 
 ### ¿Qué variable representa la lista ABIERTA?
 La variable que representa a la lista ABIERTA es **openSet**. Esta se encuentra en la línea 44 de la clase pública AStar.
