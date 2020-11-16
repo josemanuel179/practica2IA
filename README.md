@@ -11,6 +11,7 @@ La variable que representa a la función f es **fScore**. Esta se encuentra en l
 ### ¿Qué método habría que modificar para que la heurística representara la distancia aérea entre vértices?
 El método que habría que modifica para representar la distancia aérea con la heurítica sería el método **heuristicCostEstimate()**, que se encuentra en la línea 119 de la clase pública AStar.
 ### ¿Realiza este método reevaluación de nudos cuando se encuentra una nueva ruta a un determinado vértice? Justifique la respuesta.
+El código, como se puede observar de la línea 57 a la 69, si que realiza el método de reevaluación de nudos. En este método, el código compara la **"f"** dos vértices. Dependiendo de sus valores, registra el vértice cuya **"f"** sea inferior.
 
 ## Grafo
 ![](grafo.jpeg)
