@@ -50,10 +50,10 @@ public class Main {
     final Graph.Edge<Integer> e4_3 = new Graph.Edge<Integer>(2, n4, n3);
     final Graph.Edge<Integer> e4_7 = new Graph.Edge<Integer>(5, n4, n7);
     final Graph.Edge<Integer> e5_8 = new Graph.Edge<Integer>(4, n5, n8);
-    final Graph.Edge<Integer> e6_9 = new Graph.Edge<Integer>(7, n6, n9);
+    final Graph.Edge<Integer> e6_9 = new Graph.Edge<Integer>(3, n6, n9);
     final Graph.Edge<Integer> e7_10 = new Graph.Edge<Integer>(4, n7, n10);
-    final Graph.Edge<Integer> e9_10 = new Graph.Edge<Integer>(2, n9, n10);
-    final Graph.Edge<Integer> e10_9 = new Graph.Edge<Integer>(2, n10, n9);
+    final Graph.Edge<Integer> e9_10 = new Graph.Edge<Integer>(8, n9, n10);
+    final Graph.Edge<Integer> e10_9 = new Graph.Edge<Integer>(8, n10, n9);
     {
       aristas.add(e1_2);
       aristas.add(e1_3);
