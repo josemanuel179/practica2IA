@@ -1,6 +1,6 @@
 # Práctica 2
 
-# Ejecución del programa
+## Ejecución del programa
 ```
 ant run_main
 ```
